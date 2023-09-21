@@ -11,7 +11,7 @@ public class MessageController {
     @MessageMapping("/server/receive")
     @SendTo("/topic1/greetings")
     public Object exchangeMessage(Message message) {
-        System.out.println("in controller: " + message);
+        System.out.println("in controller : " + message);
         return message;
     }
 
